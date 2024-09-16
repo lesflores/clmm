@@ -7,20 +7,15 @@
 # "Neutral", "Satisfecho/a", "Muy satisfecho/a".
 #--------------------
 
-#--------------------
-# Variable dependiente:
-
+# Variable dependiente
 # "Satisfacción con la democracia" (ordinal)
 # 1 = Muy insatisfecho/a
 # 2 = Insatisfecho/a
 # 3 = Neutral
 # 4 = Satisfecho/a
 # 5 = Muy satisfecho/a
-#--------------------
 
-#--------------------
-# Variables independientes:
-
+# Variables independientes
 # 1. Confianza en las instituciones (ordinal)
 # Medida en una escala de Likert:
 # 1 = Ninguna confianza
@@ -51,18 +46,16 @@
 # 3 = A veces
 # 4 = Frecuentemente
 # 5 = Todos los días
-#--------------------
 
 #--------------------
 # Modelo clmm:
 
 library(readxl)
 library(tidyverse)
+library(ordinal)
 
 datos <- read_excel("Satisfaccion_democracia.xlsx")
 glimpse(datos)
-
-library(ordinal)
 
 # Convertir "satisfaccion_democracia" a un factor ordenado
 datos$Satisfaccion_democracia <- factor(datos$Satisfaccion_democracia, 
