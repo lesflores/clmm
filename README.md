@@ -1,10 +1,10 @@
 # Variable dependiente
 # "Satisfacción con la democracia" (ordinal)
-# 1 = Muy insatisfecho/a
-# 2 = Insatisfecho/a
-# 3 = Neutral
-# 4 = Satisfecho/a
-# 5 = Muy satisfecho/a
+1 = Muy insatisfecho/a
+2 = Insatisfecho/a
+3 = Neutral
+4 = Satisfecho/a
+5 = Muy satisfecho/a
 
 # Variables independientes
 # 1. Confianza en las instituciones (ordinal)
