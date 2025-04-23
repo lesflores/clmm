@@ -61,7 +61,7 @@ glimpse(datos)
 datos$Satisfaccion_democracia <- factor(datos$Satisfaccion_democracia, 
                                         ordered = TRUE)
 
-# Ajuste del modelo
+# Modelo
 modelo <- clmm(Satisfaccion_democracia ~ Confianza_instituciones + 
                  Participacion_politica + Percepcion_corrupcion + 
                  Ideologia_politica + Percepcion_exclusion + 
